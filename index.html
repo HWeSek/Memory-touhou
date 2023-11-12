@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./style_do_memory.css">
+    <title>Touhou - Memory</title>
+    <script src="./memory.js"></script>
+</head>
+<body onload="init()">
+    <img id="menu" src="./images/main-menu.png" alt="menu" usemap="#image-map">
+
+    <map name="image-map">
+        <area onclick="setTimer(30);" coords="42,57,75,318,713,167" shape="poly">
+        <area onclick="setTimer(60);" coords="106,397,719,197,721,488" shape="poly">
+        <area onclick="setTimer(90);" coords="75,468,718,675,63,733" shape="poly">
+    </map>
+    <header>
+        <h1>Touhou - Memory</h1>
+        <div id="bars-div" style="display: none; justify-content: center; align-items: center;">
+            <div id="p-outer">
+                <div id="progress-bar" style="display: none;"></div>
+            </div>
+        </div>
+    </header>
+    <div id="plansza">
+        <img src="" alt="obrazek"  id="0">
+        <img src="" alt="obrazek"  id="1">
+        <img src="" alt="obrazek"  id="2">
+        <img src="" alt="obrazek"  id="3">
+        <img src="" alt="obrazek"  id="4">
+        <img src="" alt="obrazek"  id="5">
+        <img src="" alt="obrazek"  id="6">
+        <img src="" alt="obrazek"  id="7">
+        <img src="" alt="obrazek"  id="8">
+        <img src="" alt="obrazek"  id="9">
+        <img src="" alt="obrazek"  id="10">
+        <img src="" alt="obrazek"  id="11">
+        <img src="" alt="obrazek"  id="12">
+        <img src="" alt="obrazek"  id="13">
+        <img src="" alt="obrazek"  id="14">
+        <img src="" alt="obrazek"  id="15">
+    </div>
+    <div id="tab_wynik">
+        <h3>Tabela wyników dla tego trybu gry</h3>
+        <table id="wyniki">
+            <thead>
+                <tr>
+                    <th>Lp.</th>
+                    <th>Nick</th>
+                    <th>Czas</th>
+                </tr>
+            </thead>
+            <tbody>
+
+            </tbody>
+        </table>
+    </div>
+
+    <div id="end-screen">
+        <h2>koniec gry</h2>
+        <label style="font-size: 2em;">Podaj swój nick<input type="text" name="nick" id="nick" value="anon"></label>
+        <div class="resume-btn" onclick="game_reset()">Zagraj ponownie</div>
+    </div>
+</body>
+</html>

@@ -1,0 +1,106 @@
+        *{
+            box-sizing: border-box;
+            font-family: Andale Mono, monospace;
+        }
+        body {
+            background-color: rgb(179, 97, 113);
+        }
+        #menu {
+            position: absolute;
+            top: 109px;
+            left: calc(50vw - 391px);
+            scale: 1;
+        }
+        #plansza {
+            width: 900px;
+            padding: 0px;
+            font-size: 0;
+            margin-left: calc(50vw - 400px);
+        }
+        #plansza img {
+            width: 200px;
+            height: 200px;
+            margin: 0px;
+            border: 1px solid black;
+            border-radius: 12px;
+        }
+        header {
+            margin-inline: auto;
+            text-align: center;
+            height: 86.5px;
+        }
+
+        #progress-bar {
+            background-color: cyan;
+            width: 540px;
+            height: 20px
+        }
+        #p-outer {
+            background-color: gainsboro;
+            width: 540px;
+            height: 20px
+        }
+        
+        #end-screen {
+            position: absolute;
+            left: calc(50vw - 500px);
+            top: 70px;
+            width: 1000px;
+            height: 500px;
+            z-index: 2;
+            background-color: rgb(180, 52, 52, 0.8);
+            border: 8px rgb(37, 2, 2) solid;
+            border-radius: 150px;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            display: none;
+        }
+        h2 {
+            font-size: 6em;
+            text-align: center;
+        }
+        .resume-btn {
+            width: 300px;
+            height: 100px;
+            background-color: burlywood;
+            border: darkslategray 5px solid;
+            text-align: center;
+            font-size: 2em;
+            padding-top:25px;
+            border-radius: 30px;
+            transition: 0.3s;
+            margin: 15px;
+        }
+
+        .resume-btn:hover{
+            transition: 0.3s;
+            background-color: whitesmoke;
+        }
+
+        #nick {
+            width: 200px;
+            height: 30px;
+            background-color: beige;
+            border-radius: 10px;
+        }
+
+        #tab_wynik {
+            background-color: antiquewhite;
+            width: 500px;
+            height: 300px;
+            margin: auto;
+            margin-top: 30px;
+            text-align: center;
+            display: none;
+        }
+        #tab_wynik table{
+            background-color: antiquewhite;
+            margin: auto;
+             border-collapse: collapse;
+        }
+        th, td {
+            border: 1px solid black;
+            width: 150px;
+        }
